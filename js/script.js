@@ -25,14 +25,15 @@ tabs.forEach((tab, index) => {
 const testimonial_tabs = $$(".testimonial__tab-item");
 const testimonial_panes = $$(".testimonial__tab-pane");
 
-testimonial_tabs.forEach((tab, index) => {
-    const pane = testimonial_panes[index];
+testimonial_tabs.forEach((testTab, index) => {
+    const testPane = testimonial_panes[index];
   
-    tab.onclick = function () {
-      $(".testimonial__tab-item.active-item").classList.remove(".active-item")
-      $(".testimonial__tab-pane.active-pane").classList.remove(".active-pane");
+    testTab.onclick = function () {
+      $(".testimonial__tab-item.active-item").classList.remove("active-item");
+      $(".testimonial__tab-pane.active-pane").classList.remove("active-pane");
+
   
       this.classList.add("active-item");
-      pane.classList.add("active-pane");
+      testPane.classList.add("active-pane");
     };
   });

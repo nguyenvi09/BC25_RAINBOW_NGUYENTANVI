@@ -878,4 +878,15 @@ a {
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
+
+  .header .navbar-nav {
+    gap: 1rem;
+    background-color: white;
+    width: max-content;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: black;
+    padding: 1rem;
+  }
 }
